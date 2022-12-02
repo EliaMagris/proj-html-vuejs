@@ -2,15 +2,15 @@
   <div class="container">
     <div class="fixed-nav">
       <nav class="navBar">
-      <div><img src="../assets/logo.png" alt="" /></div>
-      <div class="nav-button">
-        <NavBar v-for="(element, index) in propsNav" :key="index" :secPropsNav="element" />
-        <button class="">Join us</button>
-        <div><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></div>
-      </div>
-    </nav>
+        <div><img src="../assets/logo.png" alt="" /></div>
+        <div class="nav-button">
+          <NavBar v-for="(element, index) in propsNav" :key="index" :secPropsNav="element" />
+          <button class="">Join us</button>
+          <div><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></div>
+        </div>
+      </nav>
     </div>
-    
+
     <div class="techForum">
       <div class="forumCont">
         <h1>Tech Forum!</h1>
@@ -18,10 +18,14 @@
         <button>GET AVADA NOW!<font-awesome-icon class="fa-solid" icon="fa-solid fa-chevron-right" /></button>
       </div>
       <div class="headerDescription">
-         <div class="descriptionsH">
-           <h2>avara forum is the place to be</h2>
-           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum id eaque facilis officia in fugit eum voluptatem perferendis assumenda necessitatibus? Autem repellendus cumque dolorem molestias in excepturi officia alias inventore.</p>
-         </div>
+        <div class="descriptionsH">
+          <h2>avara forum is the place to be</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum id eaque facilis officia in fugit eum
+            voluptatem perferendis assumenda necessitatibus? Autem repellendus cumque dolorem molestias in excepturi
+            officia alias inventore.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -44,36 +48,36 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .container {
-  .fixed-nav{
+  .fixed-nav {
     position: fixed;
     width: 100%;
     background-color: #27aabe;
 
     .navBar {
-    width: 70%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    color: white;
-    justify-content: space-between;
-    padding: 5px;
-
-    .nav-button {
+      width: 70%;
+      margin: auto;
       display: flex;
       align-items: center;
+      color: white;
+      justify-content: space-between;
+      padding: 5px;
 
-      button {
-        margin: 0 15px;
-        padding: 8px 15px;
-        background-color: #1a1b1b;
-        color: white;
-      }
+      .nav-button {
+        display: flex;
+        align-items: center;
 
-      div {
-        padding: 0 15px;
+        button {
+          margin: 0 15px;
+          padding: 8px 15px;
+          background-color: #1a1b1b;
+          color: white;
+        }
+
+        div {
+          padding: 0 15px;
+        }
       }
     }
-  }
   }
   //  END NAV-BAR START TECH FORUM
 
@@ -108,20 +112,20 @@ export default {
     }
   }
 
-  .headerDescription{
+  .headerDescription {
     background-color: #eee3d6;
     padding: 20px;
 
-    .descriptionsH{
+    .descriptionsH {
       width: 40%;
       margin: auto;
       text-align: center;
       padding: 30px 0;
 
-      h2{
+      h2 {
         padding: 20px 0;
       }
-      p{
+      p {
         line-height: 20px;
         width: 80%;
         margin: auto;
