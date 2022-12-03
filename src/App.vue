@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HeaderTop :propsNav="arrayNav" class="headerCont" />
-    <MainTop />
+    <MainTop :propsCards="propsForum"/>
     <FooterTop />
   </div>
 </template>
@@ -40,6 +40,40 @@ export default {
           home: 'Contact us',
         },
       ],
+      propsForum: [
+         {
+          card: 'News & Community',
+          fontAwesome: 'fa-solid fa-file-lines'
+        },
+        {
+          card: 'Apple Forum',
+          fontAwesome: 'fa-brands fa-apple'
+        },
+        {
+          card: 'Microsoft Forum',
+          fontAwesome: 'fa-brands fa-windows'
+        },
+        {
+          card: 'Android Forum',
+          fontAwesome: 'fa-brands fa-android'
+        },
+        {
+          card: 'General Discussion',
+          fontAwesome: 'fa-solid fa-mug-saucer'
+        },
+        {
+          card: 'Apps & Software',
+          fontAwesome: 'fa-solid fa-cubes'
+        },
+        {
+          card: 'Gadgets & Stuff',
+          fontAwesome: 'fa-solid fa-laptop'
+        },
+        {
+          card: 'Tutorials & Guides',
+          fontAwesome: 'fa-solid fa-wrench'
+        },
+      ]
     };
   },
 };
