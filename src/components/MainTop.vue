@@ -269,6 +269,9 @@ export default {
         font-weight: bold;
         color: white;
       }
+      button:hover {
+          opacity: 0.8;
+        }
     }
   }
 
@@ -302,6 +305,9 @@ export default {
         font-weight: bold;
         color: white;
       }
+      button:hover {
+          opacity: 0.6;
+        }
     }
     .image-little-bottom {
       width: 35%;

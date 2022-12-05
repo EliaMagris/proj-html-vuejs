@@ -89,10 +89,14 @@
       </div>
     </div>
     <div class="socialIcon">
-      <p>©Copyright 2012- 2022 | Avada Theme by <span style="color: black">Theme Fusion</span> | All Right Reserved | Powered by <span style="color: black">WordPress</span>
+      <p>© Copyright 2012- 2022 | Avada Theme by <span style="color: black">Theme Fusion</span> | All Right Reserved | Powered by <span style="color: black">WordPress</span>
       </p>
-      <div class="socialFlex"><SocialFooter v-for="(element, index) in propsSocial" :key="index" :secSocialFooter="element"/></div> 
+      <div class="socialFlex"><SocialFooter class="icon" v-for="(element, index) in propsSocial" :key="index" :secSocialFooter="element"/></div> 
+      <div class="arrowUp">
+           <font-awesome-icon icon="fa-solid fa-chevron-up" />
+        </div>
     </div>
+    
   </div>
 </template>
 
@@ -138,6 +142,9 @@ export default {
       font-weight: bold;
       color: white;
     }
+    button:hover {
+          background-color: #088396;
+        }
   }
 }
 .newsLetter {
@@ -166,10 +173,14 @@ export default {
       font-weight: bold;
       color: white;
     }
+    button:hover {
+          opacity: 0.8;
+        }
   }
 }
 .answerZone {
   border-bottom: 1px solid lightgray;
+  padding-bottom: 50px;
   .answer {
     width: 70%;
     margin: auto;
@@ -206,12 +217,36 @@ export default {
     width: 70%;
     margin: auto;
     justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    position: relative;
     .socialFlex{
       display: flex;
+      width: 20%;
+      
+      .icon{
+        padding: 10px;
+        color: white;
+      }
     }
   p{
     color: #969799;
+    font-size: 0.8rem;
   }
-  
+  .arrowUp{
+  background-color: #62676c;
+  color: white;
+  position:  absolute;
+  bottom: 0px;
+  right: -150px;
+  height: 40px;
+  width: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius:5px 5px 0px 0px;
 }
+}
+
+
 </style>

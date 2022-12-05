@@ -76,16 +76,20 @@ export default {
       ],
       PropSocials: [
         {
-          social: 'fa-brands fa-facebook-f'
+          social: 'fa-brands fa-facebook-f',
+          class: 'facebook'
         },
         {
-          social: 'fa-brands fa-twitter'
+          social: 'fa-brands fa-twitter',
+          class: 'twitter'
         },
         {
-          social: 'fa-brands fa-instagram'
+          social: 'fa-brands fa-instagram',
+          class: 'instagram'
         },
         {
           social: 'fa-brands fa-youtube',
+          class: 'youtube'
         },
       ] 
     };
@@ -102,7 +106,7 @@ export default {
 }
 
 #app {
-  font-family: sans-serif;
+  font-family: Lato;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

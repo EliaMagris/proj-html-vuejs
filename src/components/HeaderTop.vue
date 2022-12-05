@@ -71,8 +71,11 @@ export default {
           padding: 8px 15px;
           background-color: #1a1b1b;
           color: white;
+          border: none;
         }
-
+        button:hover {
+          opacity: 0.8;
+        }
         div {
           padding: 0 15px;
         }
@@ -105,10 +108,14 @@ export default {
         font-weight: bold;
         color: white;
 
+
         .fa-solid {
           padding-left: 10px;
         }
       }
+      button:hover {
+          background-color: #088396;
+        }
     }
   }
 
