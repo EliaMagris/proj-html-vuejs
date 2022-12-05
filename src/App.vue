@@ -2,7 +2,7 @@
   <div id="app">
     <HeaderTop :propsNav="arrayNav" class="headerCont" />
     <MainTop :propsCards="propsForum"/>
-    <FooterTop />
+    <FooterTop :propsSocial="PropSocials"/>
   </div>
 </template>
 
@@ -73,7 +73,21 @@ export default {
           card: 'Tutorials & Guides',
           fontAwesome: 'fa-solid fa-wrench'
         },
-      ]
+      ],
+      PropSocials: [
+        {
+          social: 'fa-brands fa-facebook-f'
+        },
+        {
+          social: 'fa-brands fa-twitter'
+        },
+        {
+          social: 'fa-brands fa-instagram'
+        },
+        {
+          social: 'fa-brands fa-youtube',
+        },
+      ] 
     };
   },
 };
