@@ -10,7 +10,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 // import specific icons /
-import {faMagnifyingGlass, faChevronRight, faArrowRight, faFileLines, faMugSaucer, faCubes, faLaptop, faWrench, faChevronUp} from '@fortawesome/free-solid-svg-icons';
+import {faMagnifyingGlass, faChevronRight, faArrowRight, faFileLines, faMugSaucer, faCubes, faLaptop, faWrench, faChevronUp, faPlay} from '@fortawesome/free-solid-svg-icons';
 
 import {faApple, faWindows, faAndroid, faFacebookF, faTwitter, faInstagram, faYoutube} from '@fortawesome/free-brands-svg-icons'
 
@@ -18,7 +18,7 @@ import {faApple, faWindows, faAndroid, faFacebookF, faTwitter, faInstagram, faYo
 import {} from '@fortawesome/free-regular-svg-icons';
 
 // add icons to the library /
-library.add(faMagnifyingGlass, faChevronRight, faApple, faWindows, faAndroid, faArrowRight, faFileLines, faMugSaucer, faCubes, faLaptop, faWrench, faFacebookF, faTwitter, faInstagram, faYoutube, faChevronUp);
+library.add(faMagnifyingGlass, faChevronRight, faApple, faWindows, faAndroid, faArrowRight, faFileLines, faMugSaucer, faCubes, faLaptop, faWrench, faFacebookF, faTwitter, faInstagram, faYoutube, faChevronUp, faPlay);
 
 // add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon);

@@ -92,7 +92,7 @@
       <p>© Copyright 2012- 2022 | Avada Theme by <span style="color: black">Theme Fusion</span> | All Right Reserved | Powered by <span style="color: black">WordPress</span>
       </p>
       <div class="socialFlex"><SocialFooter class="icon" v-for="(element, index) in propsSocial" :key="index" :secSocialFooter="element"/></div> 
-      <div class="arrowUp">
+      <div @click="toTop()" class="arrowUp">
            <font-awesome-icon icon="fa-solid fa-chevron-up" />
         </div>
     </div>
@@ -112,6 +112,16 @@ export default {
   props: {
     propsSocial: Array
   },
+   methods:{
+    toTop() {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            }
+            )
+        }
+  }
 };
 </script>
 
@@ -141,6 +151,7 @@ export default {
       padding: 15px 35px;
       font-weight: bold;
       color: white;
+      cursor: pointer;
     }
     button:hover {
           background-color: #088396;
@@ -172,6 +183,7 @@ export default {
       border: none;
       font-weight: bold;
       color: white;
+      cursor: pointer;
     }
     button:hover {
           opacity: 0.8;
@@ -245,6 +257,7 @@ export default {
   flex-direction: column;
   justify-content: space-around;
   border-radius:5px 5px 0px 0px;
+  cursor: pointer;
 }
 }
 

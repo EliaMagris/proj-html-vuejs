@@ -22,6 +22,20 @@ export default {
 .container{
   li{
     padding: 0 15px;
+    cursor: pointer;
   }
+  li::after {
+      content: "";
+      display: block;
+      margin: auto;
+      height: 2px;
+      width: 5px;
+      transition: all 0.4s;
+    }
+
+    li:hover::after {
+      width: 100%;
+      background: #fc8c5e;
+    }
 }
 </style>

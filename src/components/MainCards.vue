@@ -27,7 +27,7 @@ export default {
   border-top: 2px solid #4562b0;
   margin: 10px 10px;
   background-color: white;
-
+  cursor: pointer;
   .icon {
     background-color: #fc8c5e;
     border-radius: 50%;
@@ -37,4 +37,9 @@ export default {
     color: white;
   }
 }
+.card-body:hover{
+     transform: translate(0px, -20px,);
+     transition: 0.5s;
+     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
 </style>

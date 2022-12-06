@@ -114,7 +114,7 @@
         <div class="image-little-bottom">
           <div class="title-line-no">
             <h1>Tutorial & Guides</h1>
-            <div class="line-middle"></div>
+            <div class="line-middle positionS"></div>
           </div>
           <!-- CARD 1 -->
 
@@ -268,10 +268,11 @@ export default {
         padding: 15px 20px;
         font-weight: bold;
         color: white;
+        cursor: pointer;
       }
       button:hover {
-          opacity: 0.8;
-        }
+        opacity: 0.8;
+      }
     }
   }
 
@@ -304,10 +305,11 @@ export default {
         padding: 15px 20px;
         font-weight: bold;
         color: white;
+        cursor: pointer;
       }
       button:hover {
-          opacity: 0.6;
-        }
+        opacity: 0.6;
+      }
     }
     .image-little-bottom {
       width: 35%;
@@ -316,6 +318,7 @@ export default {
       justify-content: space-around;
       padding: 10px;
       flex-wrap: wrap;
+
       .title-line-no {
         padding: 10px;
 
@@ -328,6 +331,9 @@ export default {
           border-bottom: 1px solid #fc8c5e;
           width: 40%;
           padding: 10px;
+        }
+        .positionS {
+          margin-left: 0;
         }
       }
       .cardSpec {
